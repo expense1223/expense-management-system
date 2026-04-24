@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager - Login/Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAVdShKA_7l7TqpZ5O1KbjQ0rYkdb-lZ-c",
+    authDomain: "expense-management-syste-8f2b9.firebaseapp.com",
+    projectId: "expense-management-syste-8f2b9",
+    storageBucket: "expense-management-syste-8f2b9.firebasestorage.app",
+    messagingSenderId: "791275373780",
+    appId: "1:791275373780:web:5897817f108b11360a2741",
+    measurementId: "G-5EBB2D40Y4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+<div class="container">
+    <h1>Expense Manager</h1>
+    
+    <div id="registerForm">
+        <h2>Register</h2>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <button id="registerBtn" class="btn primary">Register</button>
+    </div>
+
+    <hr>
+
+    <div id="loginForm">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required><br>
+        <input type="password" id="loginPassword" placeholder="Password" required><br>
+        <button id="loginBtn" class="btn primary">Login</button>
+    </div>
+
+    <p id="authStatus"></p>
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

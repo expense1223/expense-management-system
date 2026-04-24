@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Expense Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="dashboard" style="display: none;">
+    <h2>Dashboard</h2>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+
+    <h3>Add Expense</h3>
+    <input type="text" id="title" placeholder="Title">
+    <input type="number" id="amount" placeholder="Amount" step="0.01">
+    <input type="date" id="date">
+    <select id="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Entertainment</option>
+        <option>Other</option>
+    </select>
+    <button id="addBtn">Add Expense</button>
+
+    <hr>
+
+    <h3>Expenses</h3>
+    <div>Total Balance: <strong id="total">₹0</strong></div>
+    <ul id="list"></ul>
+</div>
+
+<div id="loading" style="text-align: center; padding: 50px;">Loading...</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
